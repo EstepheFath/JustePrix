@@ -1,0 +1,19 @@
+import random  
+
+number=random.randint (0,1000)
+
+
+estimation = int(input("Quelle est votre estimation? : "))
+
+while number != estimation:
+    
+    if number < estimation:
+        print("Plus petit !")
+        estimation = int(input("Quelle est votre estimation? "))
+    
+    elif number > estimation:
+        print("Plus grand !")
+        estimation = int(input("Quelle est votre estimation? "))
+    
+else:
+    print("C'est gagné!")
